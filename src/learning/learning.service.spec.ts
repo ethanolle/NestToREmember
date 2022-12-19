@@ -15,4 +15,8 @@ describe('LearningService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+  it('should return "I am a learner!"', () => {
+    expect(service.getLearner()).toEqual('I am a learner!');
+  });
 });
